@@ -13,7 +13,7 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v0.4.2
       id: validator
       with:
-        root: .
+        root: ./
         css: true
     - uses: actions/upload-artifact@v2
       with:
