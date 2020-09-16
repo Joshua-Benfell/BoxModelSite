@@ -1,0 +1,37 @@
+body {
+	font-family: "Roboto", Helvetica, Verdana, sans-serif;
+
+	/* Remove any initial margins and padding from the body */
+	margin: 0;
+	padding: 0;
+	/* Force body to fill the height of the view port even if content doesn't */
+	height: 100%;
+	background-color: #E0FBFC;
+}
+
+
+/* Main Layout Styles */
+
+
+main {
+	background-color: #E0FBFC;
+	width: 70%;
+	display: flex;
+	height: 100%;
+}
+
+.right-sidebar {
+	background-color: #98C1D9;
+	width: 30%;
+	height: 100%;
+	display: flex;
+}
+
+/* End Main Layout Styles */
+
+.flex-box {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
