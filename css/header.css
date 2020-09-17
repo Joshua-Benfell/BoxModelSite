@@ -1,3 +1,5 @@
+/* This file details the styles for the main elements in the header */
+
 header {
 	/* Width is implicitly set as it is a block element */
 	position: fixed;
@@ -12,7 +14,7 @@ header {
 
 
 #header-content-container {
-	width: 60em;  /* 960px at 16px font size */
+	width: 100%;  /* 960px at 16px font size */
 	height: 100%;
 	display: flex;
 }
@@ -20,76 +22,25 @@ header {
 /* Display H1 and nav-menu side by side with varying width */
 h1 {
 	font-family: "Lobster", "Trebuchet MS";
-	flex: 5em;
-	margin: 0;
+	flex: 5%;
+	margin: 0 20px;
 	height: 100%;
 	box-sizing: border-box;
 	padding: 0.5em 0;
 }
 
 #nav-menu {
-	flex: 55em;
+	flex: 40%;
 	height: 100%;
 }
 
-#nav-menu ul {
-	list-style: none;	
-	box-sizing: border-box;
-	height: 100%;
-    margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-#nav-menu ul li {
+#spacer {
 	flex: 25%;
+}
+
+#search {
+	flex: 30%;
 	height: 100%;
-	position: relative;
-}
-
-#nav-menu ul li a {
-	display: block;
-	padding: 1.15em 0;
-	font-size: 1.25em;
-	width: 100%;
-}
-
-/* Underline Styles */
-/* An adjacent span that uses psuedo elements to create a center spread animation */
-#nav-menu ul li a:hover + .hover::after, .hover:hover::after, #nav-menu ul li a:hover + .hover::before, .hover:hover::before {
-	max-width: 40%;
-}
-
-.hover::after, .hover::before {
-	content: '';
-	position: absolute;
-	/* background-color: #de6fa1; */
-	background-color: #F24333;
-	height: 2px;
-	max-width: 0;
-	width: 40%;
-	bottom: 0;
-	transition: max-width ease-in-out 0.3s;
-}
-
-.hover::after {
-	/* Position the after so that it has to expand to the right */
-	left: 50%; 
-}
-
-.hover::before {
-	/* Position the before so that it has to expand to the left */
-	right: 50%;
-}
-/* End Underline Styles */
-
-#nav-menu ul li a:focus {
-	/* background-color: #98C1D9; */
-	background-color: #d2f9fa;
-	/* Darkened by 3% */
-}
-
-
-#nav-menu ul li a {
-	font-family: "Dancing Script";
+	text-align: left;
+	margin-right: 1.5em;
 }
