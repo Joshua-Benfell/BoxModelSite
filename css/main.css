@@ -1,3 +1,11 @@
+:root {
+	--main-bg-colour: #efefef;
+	--sidebar-bg-colour: #C1E0F7;
+	--underline-colour: #F24333;
+	--highlight-text-colour: #BA1B1D;
+	--header-bg--colour: #7CC6FE;
+}
+
 html {
 	height: 100%;
 }
@@ -9,48 +17,22 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
-	background-color: #efefef;
+	background-color: var(--main-background-colour);
 	display: flex;
 }
 
 
 /* Main Layout Styles */
-
-
 main {
-	background-color: #efefef;
+	background-color: var(--main-background-colour);
 	flex: 70%;
 	margin-top: 4.5em;
 }
 
 .right-sidebar {
-	background-color: #C1E0F7;
+	background-color: var(--sidebar-bg-colour);
 	flex: 30%;
 	margin-top: 4.5em;
-}
-
-/* End Main Layout Styles */
-
-.flex-box {
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-}
-
-
-a:visited {
-	color: #000;
-}
-
-a:hover, .hover:hover + a {
-	color: #BA1B1D;
-}
-
-a {
-	font-weight: 700;
-	text-decoration: none;
-	color: #000000;
 }
 
 section {
@@ -61,3 +43,52 @@ section {
 figure img {
 	margin: 0 auto;
 }
+
+.flex-box {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+/* End Main Layout Styles */
+
+/* Anchor Styles */
+a:visited {
+	color: #000;
+}
+
+a:hover, .hover:hover + a {
+	color: var(--highlight-text-colour);
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* End Anchor Styles */
+
+
+/* Generic Highlight Styles */
+
+.hover::after, .hover::before, .text-input-highlight::after, .text-input-highlight::before {
+	content: '';
+	position: absolute;
+	background-color: var(--underline-colour);
+	height: 2px;
+	max-width: 0;
+	bottom: 0;
+	transition: max-width ease-in-out 0.3s;
+}
+
+.hover::after, .text-input-highlight::after {
+	/* Position the after so that it has to expand to the right */
+	left: 50%; 
+}
+
+.hover::before, .text-input-highlight::before {
+	/* Position the before so that it has to expand to the left */
+	right: 50%;
+}
+/* End Generic Highlight Styles */
