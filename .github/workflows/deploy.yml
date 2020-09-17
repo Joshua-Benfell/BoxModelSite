@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   Deploy:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # Required with all actions
       - name: DeployToGHPages
