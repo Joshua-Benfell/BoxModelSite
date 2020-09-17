@@ -1,12 +1,16 @@
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "Roboto", Helvetica, Verdana, sans-serif;
 
 	/* Remove any initial margins and padding from the body */
 	margin: 0;
 	padding: 0;
-	/* Force body to fill the height of the view port even if content doesn't */
-	height: 100%;
-	background-color: #E0FBFC;
+	min-height: 100%;
+	background-color: #efefef;
+	display: flex;
 }
 
 
@@ -14,17 +18,15 @@ body {
 
 
 main {
-	background-color: #E0FBFC;
-	width: 70%;
-	display: flex;
-	height: 100%;
+	background-color: #efefef;
+	flex: 70%;
+	margin-top: 4.5em;
 }
 
 .right-sidebar {
-	background-color: #98C1D9;
-	width: 30%;
-	height: 100%;
-	display: flex;
+	background-color: #C1E0F7;
+	flex: 30%;
+	margin-top: 4.5em;
 }
 
 /* End Main Layout Styles */
@@ -34,4 +36,28 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+}
+
+
+a:visited {
+	color: #000;
+}
+
+a:hover, .hover:hover + a {
+	color: #BA1B1D;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;
+	color: #000000;
+}
+
+section {
+	width: 100%;
+	display: block;
+}
+
+figure img {
+	margin: 0 auto;
 }

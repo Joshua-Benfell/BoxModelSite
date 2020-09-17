@@ -1,18 +1,19 @@
 header {
 	/* Width is implicitly set as it is a block element */
 	position: fixed;
-	background-color: #E0FBFC;
+	background-color: #7CC6FE;
 	height: 4.5em;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	top: 0;
+	box-shadow: 0 1px 5px 1px #333;
 }
 
 
 #header-content-container {
 	width: 60em;  /* 960px at 16px font size */
 	height: 100%;
-	margin: 0 auto;
 	display: flex;
 }
 
@@ -41,7 +42,7 @@ h1 {
 }
 
 #nav-menu ul li {
-	flex: 33%;
+	flex: 25%;
 	height: 100%;
 	position: relative;
 }
@@ -63,7 +64,7 @@ h1 {
 	content: '';
 	position: absolute;
 	/* background-color: #de6fa1; */
-	background-color: #FF8484;
+	background-color: #F24333;
 	height: 2px;
 	max-width: 0;
 	width: 40%;
@@ -88,19 +89,6 @@ h1 {
 	/* Darkened by 3% */
 }
 
-a:visited {
-	color: #000;
-}
-
-a:hover, .hover:hover + a {
-	color: #FF8484;
-}
-
-a {
-	font-weight: 700;
-	text-decoration: none;
-	color: #000000;
-}
 
 #nav-menu ul li a {
 	font-family: "Dancing Script";
