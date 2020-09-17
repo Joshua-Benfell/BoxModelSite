@@ -7,6 +7,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/search.css">
+		<link rel="stylesheet" href="./css/nav.css">
 
 
 	</head>
@@ -36,6 +38,28 @@
 						</li>
 					</ul>
 				</nav>
+				<div id="spacer" class="flex-box">
+				</div>
+				<div id="search" class="flex-box"> <!-- Search Div -->
+					<form action="#" method="get" id="search-form">
+						<div class="input-box">
+							<input
+								type="text"
+								id="search-box"
+								name="search"
+								required
+								class="flex-box"
+							>
+							<span class="text-input-highlight"></span>
+							<label for="search-box" class="placeholder">
+								Search
+							</label>
+						</div>
+						<div id="search-btn" class="flex-box">
+							<input type="image" src="img/icons/search.svg" alt="Search Form" id="search-icon">
+						</div>
+					</form>
+				</div> <!-- End Search Div -->
 			</div> <!-- end header-content-container -->
 		</header>
 		<main>

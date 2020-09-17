@@ -1,0 +1,46 @@
+/* This file details the styles for elements specifically in the nav bar */
+
+#nav-menu ul {
+	list-style: none;	
+	box-sizing: border-box;
+	height: 100%;
+    margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+#nav-menu ul li {
+	flex: 25%;
+	height: 100%;
+	position: relative;
+}
+
+#nav-menu ul li a {
+	display: block;
+	padding: 1.2em 0;
+	font-size: 1.25em;
+	width: 100%;
+}
+
+/* Underline Styles */
+/* An adjacent span that uses psuedo elements to create a center spread animation */
+#nav-menu ul li a:hover + .hover::after, .hover:hover::after, #nav-menu ul li a:hover + .hover::before, .hover:hover::before {
+	max-width: 40%;
+}
+
+.hover::after, .hover::before {
+	width: 40%;
+}
+
+/* End Underline Styles */
+
+#nav-menu ul li a:focus {
+	/* background-color: #98C1D9; */
+	background-color: #56b5fd;
+	/* Darkened by 3% */
+}
+
+
+#nav-menu ul li a {
+	font-family: "Dancing Script";
+}
